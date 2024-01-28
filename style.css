@@ -1,0 +1,185 @@
+.macro-calculator {
+  margin: auto;
+  max-width: 500px;
+  /*font-family: "Roboto", sans-serif; */
+  font-family: "Verdana", sans-serif;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+}
+
+.macro-calculator,
+.macro-calculator * {
+  box-sizing: border-box;
+}
+
+.macro-calculator h2 {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  font-weight: 100;
+  margin: -8px -24px;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+
+.macro-calculator .info {
+  text-align: right;
+}
+
+.macro-calculator .info .info-paragraph {
+  text-align: left;
+}
+
+.macro-calculator dialog {
+  max-width: 600px;
+}
+
+.macro-calculator .info-btn {
+  padding: 7px 10px;
+  font-size: 10px;
+  border: 3px solid #fff;
+  background: #808080;
+  color: #fff;
+  cursor: pointer;
+}
+
+.macro-calculator .info-btn:hover {
+  background: #333
+}
+
+.macro-calculator .info-btn:active {
+  transform: translateY(2px);
+}
+
+.macro-calculator form h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 16px 0 10px 0;
+}
+
+.macro-calculator .result h4 {
+  text-align: center;
+}
+
+.macro-calculator form input[type="text"] {
+  width: 100%;
+  padding: 4px 16px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #d5dbdd;
+}
+
+.macro-calculator form input[type="text"].invalid {
+  border: 1px solid red;
+}
+
+.macro-calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.macro-calculator form #female {
+  margin-left: 20px;
+}
+
+.macro-calculator form .height,
+.macro-calculator form .weight, 
+.macro-calculator form .age {
+  position: relative;
+}
+
+.macro-calculator form .unit {
+  position: absolute;
+  right: 20px;
+  top: 55px;
+  color: #777;
+}
+
+.macro-calculator .custom-select {
+    width: 100%;
+    padding: 4px 16px;
+    border: 1px solid #d5dbdd;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.macro-calculator .calculate .calculate-btn {
+    padding: 13px 120px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.macro-calculator .calculate .calculate-btn:hover {
+    background-color: black;
+}
+
+.macro-calculator .calculate .calculate-btn:active {
+  transform: translateY(4px);
+}
+
+.macro-calculator .calculate {
+  text-align: center;
+}
+
+.macro-calculator .result {
+  text-align: center;  
+  color: #4e4e4e;
+  font-size: 18px;
+  display: none;
+}
+
+.macro-calculator .result.active {
+  display: block;
+}
+
+
+.macro-calculator .result .calories {
+  text-align: center;
+  color: green;
+  font-size: 38px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.macro-calculator .result .proteincals,
+.macro-calculator .result .carbcals,
+.macro-calculator .result .fatcals
+ {
+    color: blue;
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.macro-calculator .result .proteingrams,
+.macro-calculator .result .carbgrams,
+.macro-calculator .result .fatgrams
+ {
+    color: red;
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.macro-calculator .calculate .error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.macro-calculator .calculate .error-message.active {
+  display: block;
+}
+
+

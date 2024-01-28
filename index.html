@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="macro-calculator">
+      <h2>Caloric Intake & Macronutrient Calculator</h2>
+        <div class="controls">
+          
+          <div class="info">
+            <dialog>
+              <button autofocus>Close</button>
+              <p class="info-paragraph">
+                This calculator will calculate your recommended daily caloric intake, as well as your recommended daily protein, carbohydrate, and fat intake.
+                <br><br>
+                Your Basal Metabolic Rate (BMR) is calculated as follows:
+                <br><br>
+                male BMR = 66 + (6.23 * weight) + (12.7 * height) - (6.8 * age)
+                <br>
+                female BMR = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
+                <br><br>
+                The BMR is then multiplied by the activity level to calculate your Total Daily Energy Expenditure (TDEE), which can be used as your daily caloric intake:
+                <br><br>
+                sedentary = BMR * 1.2
+                <br>
+                lightly active = BMR * 1.375
+                <br>
+                moderately active = BMR * 1.55
+                <br>
+                very active = BMR * 1.725
+                <br>
+                extra active = BMR * 1.9
+                <br><br>
+                Calories are then increased or reduced based on your goal:
+                <br><br>
+                maintain weight = calories remain the same
+                <br>
+                quickly lose weight = calories - 500
+                <br>
+                lose weight = calories - 250
+                <br>
+                gain weight = calories + 250
+                <br>
+                quickly gain weight = calories + 500
+                <br><br>
+                Calories from each macronutrient are calculated as follows:
+                <br><br>
+                calories from protein = calories * 0.25
+                <br>
+                calories from carbohydrates = calories * 0.5
+                <br>
+                calories from fats = calories * 0.25
+                <br><br>
+                Grams of each macronutrient are calculated as follows:
+                <br><br>
+                grams of protein = calories from protein / 4
+                <br>
+                grams of carbohydrates = calories from carbohydrates / 4
+                <br>
+                grams of fats = calories from fats / 9
+                <br><br>
+                ***All calculations are based on dietary and caloric recommendations from harvard.edu and healthline.com
+                
+              </p>
+            </dialog>
+            <button class="info-btn">more information</button>
+          </div>
+          
+        <form>
+          <div class="age">
+            <h3>Age (10 - 100)</h3>
+            <input type="text" id="age" placeholder="Enter your age" />
+            <div class="unit">yrs</div>
+          </div>
+            
+          <div class="gender">
+            <h3>Gender</h3>
+            <input type="radio" id="male" value="male" name="gender" checked />
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="gender" />
+            <label for="female">Female</label>
+          </div>
+
+          <div class="height">
+            <h3>Height</h3>
+            <input type="text" id="height" placeholder="Enter your height" />
+            <div class="unit">in</div>
+          </div>
+
+          <div class="weight">
+            <h3>Weight</h3>
+            <input type="text" id="weight" placeholder="Enter your weight" />
+            <div class="unit">lbs</div>
+          </div>
+
+          <div class="activity">
+              <h3>Activity Level</h3>
+                  <select class="custom-select" id="activity-list">
+                      <option selected value="1">Sedentary (little or no exercise)</option>
+                      <option value="2">Lightly active (exercise 1-3 days a week)</option>
+                      <option value="3">Moderately active (exercise 4-5 times a week)</option>
+                      <option value="4">Very active (intense exercise 6-7 times a week)</option>
+                      <option value="5">Extra active (very intense exercise daily & physical job)</option>
+                  </select>
+            </div>
+
+          <div class="goal">
+              <h3>Goal</h3>
+                  <select class="custom-select" id="goal-list">
+                      <option selected value="1">Maintain weight</option>
+                      <option value="2">Quickly lose weight (1-2 lbs a week)</option>
+                      <option value="3">Lose weight (0.5 lbs a week)</option>
+                      <option value="4">Gain weight (0.5 lbs a week)</option>
+                      <option value="5">Quickly gain weight (1-2 lbs a week)</option>
+                  </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="calculate">
+
+        <div class="error-message">
+          <p>Please enter all information correctly.</p>
+        </div>
+
+        <button class="calculate-btn">Calculate</button>
+
+      </div>
+
+      <div class="result">
+
+        
+
+        <div class="result-message">
+          <span class="calories">0</span>Calories/day
+        </div>
+
+        <h4>Calories From Macronutrients</h4>
+
+        <div class="protein-calories">
+            <span class="proteincals">0</span> Calories/day from protein
+        </div>
+
+        <div class="carb-calories">
+            <span class="carbcals">0</span> Calories/day from carbs
+        </div>
+
+        <div class="fat-calories">
+            <span class="fatcals">0</span> Calories/day from fats
+        </div>
+
+        <h4>Grams of Macronutrients</h4>
+
+        <div class="protein-grams">
+            <span class="proteingrams">0</span> Grams/day of protein
+        </div>
+
+        <div class="carb-grams">
+            <span class="carbgrams">0</span> Grams/day of carbohydrates
+        </div>
+
+        <div class="fat-grams">
+            <span class="fatgrams">0</span> Grams/day of fat
+        </div>
+
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
