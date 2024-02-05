@@ -1,9 +1,9 @@
 body {
-  background: #0f1B21;
+  background: #0f1b21;
 }
 
 .macro-calculator {
-  color: #0f1B21;
+  color: #0f1b21;
   border-radius: 25px;
   border: 2px solid white;
   background: white;
@@ -22,7 +22,7 @@ body {
 .macro-calculator h2 {
   border-radius: 25px 25px 0px 0px;
   text-align: center;
-  background: #0f1B21;
+  background: #0f1b21;
   color: #fff;
   font-weight: 100;
   margin: -8px -24px;
@@ -53,7 +53,7 @@ body {
 }
 
 .macro-calculator .info-btn:hover {
-  background: #0f1B21;
+  background: #0f1b21;
 }
 
 .macro-calculator .info-btn:active {
@@ -80,7 +80,7 @@ body {
 }
 
 .macro-calculator form input[type="text"].invalid {
-  border: 1px solid #FF6961;
+  border: 1px solid #ff6961;
 }
 
 .macro-calculator form {
@@ -90,7 +90,7 @@ body {
 }
 
 .macro-calculator form input[type="radio"] {
-  accent-color: #FF6961;
+  accent-color: #ff6961;
 }
 
 .macro-calculator form #female {
@@ -111,7 +111,7 @@ body {
 }
 
 .macro-calculator .custom-select {
-    color: #0f1B21;
+    color: #0f1b21;
     border-radius: 25px;
     width: 100%;
     padding: 4px 16px;
@@ -128,7 +128,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     border: 3px solid #fff;
-    background: #0f1B21;
+    background: #0f1b21;
     color: #fff;
     cursor: pointer;
     margin-bottom: 32px;
@@ -160,7 +160,7 @@ body {
 
 .macro-calculator .result .calories {
   text-align: center;
-  color: green;
+  color: #77dd77;
   font-size: 38px;
   font-weight: 900;
   margin-right: 8px;
@@ -171,7 +171,7 @@ body {
 .macro-calculator .result .carbcals,
 .macro-calculator .result .fatcals
  {
-    color: blue;
+    color: #6c8dfa;
     font-size: 25px;
     font-weight: 900;
     margin-right: 8px;
@@ -182,7 +182,7 @@ body {
 .macro-calculator .result .carbgrams,
 .macro-calculator .result .fatgrams
  {
-    color: red;
+    color: #ff6961;
     font-size: 25px;
     font-weight: 900;
     margin-right: 8px;
@@ -190,7 +190,7 @@ body {
 }
 
 .macro-calculator .calculate .error-message {
-  color: #FF6961;
+  color: #ff6961;
   font-size: 14px;
   display: none;
 }
@@ -198,6 +198,7 @@ body {
 .macro-calculator .calculate .error-message.active {
   display: block;
 }
+
 
 
 
