@@ -98,7 +98,7 @@ body {
 }
 
 .macro-calculator form .height,
-.macro-calculator form .weight, 
+.macro-calculator form .weight,
 .macro-calculator form .age {
   position: relative;
 }
@@ -111,31 +111,32 @@ body {
 }
 
 .macro-calculator .custom-select {
-    color: #0f1b21;
-    border-radius: 25px;
-    width: 100%;
-    padding: 4px 16px;
-    border: 1px solid #d5dbdd;
-    font-size: 18px;
-    font-weight: bold;
+  color: #0f1b21;
+  border-radius: 25px;
+  width: 100%;
+  padding: 4px 16px;
+  border: 1px solid #d5dbdd;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .macro-calculator .calculate .calculate-btn {
-    border-radius: 25px;
-    padding: 13px 120px;
-    margin: 16px 0;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 3px solid #fff;
-    background: #0f1b21;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 32px;
+  border-radius: 25px;
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  background: #0f1b21;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 32px;
 }
 
 .macro-calculator .calculate .calculate-btn:hover {
-    background-color: #1f3540;
+  background-color: #1f3540;
 }
 
 .macro-calculator .calculate .calculate-btn:active {
@@ -147,7 +148,7 @@ body {
 }
 
 .macro-calculator .result {
-  text-align: center;  
+  text-align: center;
   color: #4e4e4e;
   font-size: 18px;
   display: none;
@@ -169,24 +170,22 @@ body {
 
 .macro-calculator .result .proteincals,
 .macro-calculator .result .carbcals,
-.macro-calculator .result .fatcals
- {
-    color: #6c8dfa;
-    font-size: 25px;
-    font-weight: 900;
-    margin-right: 8px;
-    vertical-align: middle;
+.macro-calculator .result .fatcals {
+  color: #6c8dfa;
+  font-size: 25px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .macro-calculator .result .proteingrams,
 .macro-calculator .result .carbgrams,
-.macro-calculator .result .fatgrams
- {
-    color: #ff6961;
-    font-size: 25px;
-    font-weight: 900;
-    margin-right: 8px;
-    vertical-align: middle;
+.macro-calculator .result .fatgrams {
+  color: #ff6961;
+  font-size: 25px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .macro-calculator .calculate .error-message {
