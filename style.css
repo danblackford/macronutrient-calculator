@@ -168,9 +168,15 @@ body {
   vertical-align: middle;
 }
 
+.macro-calculator .result .fat-calories,
+.macro-calculator .result .result-message {
+  border-bottom: 3px solid lightgray;
+}
+
 .macro-calculator .result .proteincals,
 .macro-calculator .result .carbcals,
 .macro-calculator .result .fatcals {
+  margin-left: auto;
   color: #6c8dfa;
   font-size: 25px;
   font-weight: 900;
@@ -181,11 +187,19 @@ body {
 .macro-calculator .result .proteingrams,
 .macro-calculator .result .carbgrams,
 .macro-calculator .result .fatgrams {
+  margin-left: auto;
   color: #ff6961;
   font-size: 25px;
   font-weight: 900;
   margin-right: 8px;
   vertical-align: middle;
+}
+
+.macro-calculator .result .macro-text {
+  padding-bottom: 10px;
+  grid-column-start: span 2;
+  margin-right: auto;
+  font-size: 15px;
 }
 
 .macro-calculator .calculate .error-message {
