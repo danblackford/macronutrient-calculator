@@ -1,36 +1,44 @@
-This calculator will calculate your recommended daily caloric intake, as well as your recommended daily protein, carbohydrate, and fat intake.
+# FitPro MacroTracker
+FitPro MacroTracker is an advanced software tool catering to personal trainers, facilitating precise calculation of clients' daily caloric intake and macronutrient requirements. Implemented intuitive interface and upheld rigorous scientific precision.
 
-Your Basal Metabolic Rate (BMR) is calculated as follows:
+# Table of Contents
+* Introduction
+* Features
+* Installation
+* Usage
+* Contributing
 
-male BMR = 66 + (6.23 * weight) + (12.7 * height) - (6.8 * age)
-female BMR = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
+# Introduction
+FitPro MacroTracker is a cutting-edge tool designed to assist personal trainers in accurately determining their clients' daily caloric intake and macronutrient requirements. By leveraging its intuitive interface and upholding rigorous scientific precision, FitPro MacroTracker streamlines the process of creating personalized nutrition plans, enabling trainers to optimize their clients' fitness journeys with precision and efficiency.
 
-The BMR is then multiplied by the activity level to calculate your Total Daily Energy Expenditure (TDEE), which can be used as your daily caloric intake:
+# Features
+Precise Caloric Intake Calculation: Utilize advanced algorithms to calculate clients' daily caloric requirements based on individual factors such as age, weight, height, and activity level.
+Macronutrient Breakdown: Generate detailed macronutrient breakdowns tailored to clients' specific goals, whether it's weight loss, muscle gain, or maintenance.
+Intuitive Interface: Accessible user interface designed for ease of use, allowing trainers to navigate through the software effortlessly and efficiently.
 
-sedentary = BMR * 1.2
-lightly active = BMR * 1.375
-moderately active = BMR * 1.55
-very active = BMR * 1.725
-extra active = BMR * 1.9
+# Installation
+To get started with FitPro MacroTracker, follow these steps:
 
-Calories are then increased or reduced based on your goal:
+### Clone the repository
+git clone https://github.com/danblackford/fitpro-macrotracker.git
 
-maintain weight = calories remain the same
-quickly lose weight = calories - 500
-lose weight = calories - 250
-gain weight = calories + 250
-quickly gain weight = calories + 500
+### Navigate to the project directory
+cd fitpro-macrotracker
 
-Calories from each macronutrient are calculated as follows:
+### Open index.html in your preferred web browser
 
-calories from protein = calories * 0.25
-calories from carbohydrates = calories * 0.5
-calories from fats = calories * 0.25
+# Usage
+Once installed, FitPro MacroTracker can be used by personal trainers to input client data and generate precise nutrition plans. Follow these steps to utilize the software effectively:
 
-Grams of each macronutrient are calculated as follows:
+1. Input client information including age, weight, height, and activity level.
+2. Review the calculated daily caloric intake and macronutrient breakdown.
+3. Customize the nutrition plan based on client goals and preferences.
+4. Save and share the personalized nutrition plan with clients.
 
-grams of protein = calories from protein / 4
-grams of carbohydrates = calories from carbohydrates / 4
-grams of fats = calories from fats / 9
+# Contributing
+We welcome contributions from the community to enhance FitPro MacroTracker. If you'd like to contribute, please follow these guidelines:
 
-***All calculations are based on dietary and caloric recommendations from harvard.edu and healthline.com
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure tests pass.
+4. Submit a pull request with a detailed description of your changes.
